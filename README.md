@@ -11,8 +11,7 @@ Asthma prevalence is computed using adult estimates.
 
 OpenMeteo API:  https://open-meteo.com/en/docs/air-quality-api?hourly=pm2_5
 
-CDC API:     
-https://data.cdc.gov/resource/qnzd-25i4.csv?$query=SELECT%20year%2C%20locationname%2C%20datasource%2C%20category%2C%20measure%2C%20data_value_unit%2C%20data_value_type%2C%20data_value%2C%20data_value_footnote_symbol%2C%20data_value_footnote%2C%20low_confidence_limit%2C%20high_confidence_limit%2C%20totalpop18plus%2C%20totalpopulation%2C%20geolocation%2C%20locationid%2C%20categoryid%2C%20measureid%2C%20datavaluetypeid%2C%20short_question_text%20SEARCH%20%22asthma%22
+American Lung Association API:   https://www.lung.org/research/trends-in-lung-disease/asthma-trends-brief/current-demographics
 
 **Sources:**
 
@@ -37,7 +36,7 @@ in terminal: pip install requests numpy --> then run python AirAsthma.py --> the
 
 * filtering all records O(n)
 
-**Dictionary:** To group PM2.5 readings by latidude/longtidude and to look up asthma prevalence by location while joining the datasets.
+**Dictionary:** To group PM2.5 readings by longtidude/latidude and to look up asthma prevalence by location/state while joining the datasets.
 
 *lookup by key (avarage O(1))
 
@@ -50,13 +49,14 @@ in terminal: pip install requests numpy --> then run python AirAsthma.py --> the
 * deduplication across n items O(n)
 
 **Methods :**
-Collected PM2.5 air quality data from Open Meteo API and loaded asthma prevalence data from CDC dataset. while also applying a *what-if* filter by excluding extreme PM2.5 outliers. Other methods used was; removed null values, converted strings to numeric values, and standardized location names.
+Collected PM2.5 air quality data from Open Meteo API and loaded asthma prevalence data from ALA dataset. while also applying a *what-if* filter by excluding extreme PM2.5 outliers. Other methods used was; removed null values, converted strings to numeric values, and standardized location names.
 
 
 **Findings :**
 
 
 **Test Evidence**
+
 
 
 **Conclusion :** 
