@@ -2,12 +2,12 @@
 
 This project is designed to reinforce OOP system design and separation of concerns,  data structures + Big O thinking, and practical use of iteration/transformation methods to analyze real data.
 
-##Air quality & Asthma rates
-##Thesis: Cities in the U.S. with higher annual PM2.5 concentrations are associated with higher overall asthma prevalence rates.
+#Air quality & Asthma rates
+#Thesis: Cities in the U.S. with higher annual PM2.5 concentrations are associated with higher overall asthma prevalence rates.
 
 Asthma prevalence is computed using adult estimates.
 
-##Data:
+#Data:
 
 OpenAQ API: https://openaq.org/developers
 
